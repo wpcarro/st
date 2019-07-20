@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
+static char *font = "Operator Mono Book:pixelsize=36:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -82,35 +82,56 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.8;
+
+/* Atom's One Dark colors     */
+/* black          = "#1e2127" */
+/* red            = "#e06c75" */
+/* green          = "#98c379" */
+/* yellow         = "#d19a66" */
+/* blue           = "#61afef" */
+/* magenta        = "#c678dd" */
+/* cyan           = "#56b6c2" */
+/* white          = "#abb2bf" */
+/* bright_black   = "#5c6370" */
+/* bright_red     = "#e06c75" */
+/* bright_green   = "#98c379" */
+/* bright_yellow  = "#d19a66" */
+/* bright_white   = "#ffffff" */
+/* bright_blue    = "#61afef" */
+/* bright_magenta = "#c678dd" */
+/* bright_cyan    = "#56b6c2" */
+/* selection      = "#3a3f4b" */
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+  /* 8 normal colors */
+  "#1e2127", // black
+  "#e06c75", // red
+  "#98c379", // green
+  "#d19a66", // yellow
+  "#61afef", // blue
+  "#c678dd", // magenta
+  "#56b6c2", // cyan
+  "#abb2bf", // white
 
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+  /* 8 bright colors */
+  "#5c6370", // black
+  "#e06c75", // red
+  "#98c379", // green
+  "#d19a66", // yellow
+  "#61afef", // blue
+  "#c678dd", // magenta
+  "#56b6c2", // cyan
+  "#ffffff", // white
 
-	[255] = 0,
+  [255] = 0,
 
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+  /* more colors can be added after 255 to use with DefaultXX */
+  "#cccccc",
+  "#555555",
 };
-
 
 /*
  * Default colors (colorname index)
